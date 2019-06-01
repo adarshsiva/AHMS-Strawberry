@@ -1,5 +1,6 @@
 package com.example.barcodescanner;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
@@ -25,6 +27,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int MY_PERMISSIONS_REQUEST_CAMERA = 100;
     static String  c;
     static TextView date,facultyName,firstName,hasStayback,reason,studentId,time;
     Button button;
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.CAMERA},
+                MY_PERMISSIONS_REQUEST_CAMERA);
 
         context = this;
             btn=findViewById(R.id.btn);
@@ -92,8 +98,16 @@ public class MainActivity extends AppCompatActivity {
                     Log.v("api", call.request().url().toString());
                     List<Student> student = response.body();
                     Log.v("test", response.body().toString());
-                    if (response.body().toString().equals("[]"))
+                    if (response.body().toString().equals("[]")) {
+                        date.setText(" " );
+                        facultyName.setText("");
+                        firstName.setText(" ");
+                        hasStayback.setText("");
+                        reason.setText("" );
+                        studentId.setText("");
+                        time.setText("");
                         Toast.makeText(context, "Invalid Roll Number", Toast.LENGTH_SHORT).show();
+                    }
                     else {
                         date.setText("Date: " + student.get(0).getDate());
                         facultyName.setText("Faculty Name: " + student.get(0).getFacultyName());
