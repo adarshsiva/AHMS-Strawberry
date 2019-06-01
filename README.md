@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AHMS-Strawberry
 =======
 ![GitHub forks](https://img.shields.io/github/forks/adarshsiva/AHMS-Strawberry.svg?label=FORK&style=social)
@@ -42,4 +42,4 @@ This app lets you:
 
 # License
 This project is licensed under the MIT License, see the [License](https://github.com/adarshsiva/AHMS-Strawberry/blob/master/LICENSE) for more details.
->>>>>>> 343476471d6df30197ee26c9d83debfa1bea4e2b
+
