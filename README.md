@@ -1,3 +1,11 @@
+![GitHub forks](https://img.shields.io/github/forks/adarshsiva/AHMS-Strawberry.svg?label=FORK&style=social)
+
+
+![GitHub](https://img.shields.io/github/license/adarshsiva/AHMS-Strawberry.svg?style=popout)
+![GitHub last commit](https://img.shields.io/github/last-commit/adarshsiva/AHMS-Strawberry.svg?style=popout)
+![GitHub top language](https://img.shields.io/github/languages/top/adarshsiva/AHMS-Strawberry.svg?style=popout)
+
+
 # AHMS-Strawberry  :strawberry:
 This app takes a student's roll number either as text or by scanning the barcode on the student's ID card and checks whether the student has permission to stayback at college after class hours.
 This app makes use of the ZXing barcode scanning library to scan the barcode and get the students roll number.
