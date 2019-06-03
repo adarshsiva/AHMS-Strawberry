@@ -1,6 +1,6 @@
 
 # AHMS-Strawberry
-=======
+
 ![GitHub forks](https://img.shields.io/github/forks/adarshsiva/AHMS-Strawberry.svg?label=FORK&style=social)
 
 
