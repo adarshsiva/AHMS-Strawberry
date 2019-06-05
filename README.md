@@ -31,11 +31,15 @@ This app lets you:
 * Gson:[Docs](https://github.com/square/retrofit/tree/master/retrofit-converters/gson/)
 
 # Screenshots
-
-![photo_2019-06-01_19-57-41 (4)](https://user-images.githubusercontent.com/44549809/58749958-de929a80-84a9-11e9-92fb-d9628a8ea6a3.jpg) ![photo_2019-06-01_19-57-41](https://user-images.githubusercontent.com/44549809/58750077-45648380-84ab-11e9-8a3d-e46d9963955f.jpg)
-
-
-![photo_2019-06-01_19-57-41 (3)](https://user-images.githubusercontent.com/44549809/58749968-ee11e380-84a9-11e9-85ff-1bc761ef275b.jpg) ![photo_2019-06-01_19-57-41 (2)](https://user-images.githubusercontent.com/44549809/58749951-cc186100-84a9-11e9-9968-dd2bf1801ca6.jpg)
+<table>
+  <tr>
+    <td><img src="/photo_2019-06-01_19-57-41 (4).jpg" height = "480" width="270"></td>
+    <td><img src="/photo_2019-06-01_19-57-41.jpg" height = "480" width="270"></td>
+    <td><img src="/photo_2019-06-01_19-57-41 (3).jpg" height = "480" width="270"></td>
+    <td><img src="/photo_2019-06-01_19-57-41 (2).jpg" height = "480" width="270"></td>
+    
+  </tr>
+  <table>
 
 # Built with
 * Android studio
